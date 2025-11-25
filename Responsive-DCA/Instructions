@@ -1,6 +1,6 @@
 * Responsive DCA.ipynb is not a trading algorithm. 
 * All QE data are hard coded - QE announcement should be updated manually 
-* Simulation start date is set as 2002.03.01 to compare with volatility model that references 36 months standard deviation
+* Simulation start date is set at 2002.03.01 to compare with volatility model that references 36 months standard deviation
 /// QQQ inception date is 1999.03.10 - volatility model that references 36 months SV can start simulating 3 years later from the inception date.
 
 
