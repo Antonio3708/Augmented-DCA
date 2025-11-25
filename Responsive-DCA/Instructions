@@ -1,0 +1,51 @@
+* Responsive DCA.ipynb is not a trading algorithm. 
+* All QE data are hard coded - QE announcement should be updated manually 
+* Simulation start date is set as 2002.03.01 to compare with volatility model that references 36 months standard deviation
+/// QQQ inception date is 1999.03.10 - volatility model that references 36 months SV can start simulating 3 years later from the inception date.
+
+
+
+
+Mode 1
+
+Monthly contribution: $100
+
+
+
+Mode 2 / Conditions
+
+A.
+Rate cuts + no recession according to NBER:
+Invest $100 + $700, then rest (do not invest) for 7 months, and return to Mode 1.
+
+B.
+Quantitative easing by the Fed:
+Invest $100 + $1,100, then rest for 11 months, and return to Mode 1.
+
+
+
+Trigger Rule
+
+If either Condition A or B happens first, and another trigger occurs during the resting period (e.g., QE occurs first, and after 4 months of resting a rate cut occurs), ignore the new trigger and continue resting until the original resting period ends.
+
+Exception (optional)
+
+If rate cuts occur first and QE happens within the 7-month resting period, invest an additional 5 months’ worth of contributions.
+
+After that, complete the remaining resting period plus 5 additional months.
+
+This produces a higher return.
+
+
+
+
+
+| Condition Triggered                                                                 | Immediate Action                           | Resting Period                          | Special Rules                                                      | Return to Mode 1           |
+| ----------------------------------------------------------------------------------- | ------------------------------------------ | --------------------------------------- | ------------------------------------------------------------------ | -------------------------- |
+| **A. Rate cuts + no recession (NBER)**                                              | Invest **$100 + $700**                     | **7 months** of no investment           | Ignore any new triggers during resting                             | After 7 months             |
+| **B. Quantitative easing (QE)**                                                     | Invest **$100 + $1,100**                   | **11 months** of no investment          | Ignore any new triggers during resting                             | After 11 months            |
+| **Exception:** Rate cuts happen first, then QE occurs within 7-month resting period | Invest **5 months** of extra contributions | Remaining resting period **+ 5 months** | Applies *only* when QE appears during Condition A’s resting window | After remaining + 5 months |
+
+
+
+
