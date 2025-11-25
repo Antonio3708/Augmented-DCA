@@ -1,5 +1,8 @@
 * Responsive DCA.ipynb is not a trading algorithm. 
 * All QE data are hard coded - QE announcement should be updated manually 
+/// Unless QE is announced in the first day of a month, QE dates are recorded the first day of the next month. 
+/// This is because most investors invest on the first day of each month. 
+///If announcement is made in March 15th, then investor will reflect the announcement the first day of the next month.
 * Simulation start date is set at 2002.03.01 to compare with volatility model that references 36 months standard deviation
 /// QQQ inception date is 1999.03.10 - volatility model that references 36 months SV can start simulating 3 years later from the inception date.
 
